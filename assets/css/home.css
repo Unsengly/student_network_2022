@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taprom&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Taprom&display=swap');
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif,'Koulen', cursive;
+
+} 
+
+header{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(252, 49, 49);
+
+}
+.box-logo{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: black;
+}
+.box-logo img{
+    height: 90px;
+}  
+.box-menu{
+    width: 100%;
+    height: 30%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(196, 194, 194);
+}
+ul li{
+    display:inline-block;
+    font-size: 20px;
+    padding-left: 45px;
+}
+ul li:hover a{
+    color:rgb(236, 78, 244);
+}
+/* Content 1*/
+.new-content{
+    width: 78%;
+    height: 500px;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    /*background-color: black;*/
+    justify-content: space-between;
+}
+.left-box{
+    width: 70%;
+    height: 100%;
+    background-color: red;
+}
+.right-box{
+    width: 29%;
+    height: 100%;
+   /* background-color: blue; */
+}
+.on-left-box,.down-left-box{
+    width: 100%;
+    height: 50%;
+   /* background-color: blue; */
+    display: flex;
+}
+.down-left-box{
+  /*  background-color: orange; */
+}
+.on-left-box-1,.down-left-box-1{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    display: flex;
+ /*   background-color: aqua; */
+}
+.on-left-box-2,.down-left-box-2{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    display: flex;
+  /*  background-color: brown; */
+}
+.on-left-box-1 img,.on-left-box-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.down-left-box-1 img,.down-left-box-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.on-right-box,.down-right-box{
+    width: 100%;
+    height: 49%;
+  /*  background-color: chartreuse; */
+}
+.down-right-box{
+    margin-top: 3%;
+}
+.on-right-box img,.down-right-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+span{
+    margin-top: 10px;
+    position: absolute;
+    padding-left: 15px;
+    padding-right: 18px;
+    background-color:blue;
+    clip-path: polygon(0 0, 79% 0, 100% 100%, 0% 100%);
+    font-family: 'Koulen', cursive;
+}
+
+.box-detail{
+    width: 100%;
+    height: 80px;
+  /*  background-color: blue;*/
+    position: absolute;
+    bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    color: white;
+    transition: all 0.7s;
+}
+.box-detail, h2,p{
+    font-family: 'Taprom', cursive;
+}
+.on-left-box-1:hover .box-detail{
+    height: 145px;
+    transition: all 0.7s;
+}
+.on-left-box-1:hover h2{
+    color: red;
+}
+.box-shadow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   /* background-color: aqua;*/
+ background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.258), black 100%); 
+}
+.on-left-box-1:hover .box-shadow{
+    background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.858), black 100%); 
+
+}
+ 
+/*Technology*/
+
+.box-detail1{
+    width: 100%;
+    height: 80px;
+  /*  background-color: blue;*/
+    position: absolute;
+    bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7; /* number of lines to show */
+            line-clamp: 7; 
+    -webkit-box-orient: vertical;
+    color: white;
+    transition: all 0.7s;
+}
+.box-detail1, h4,p{
+    font-family: 'Koulen', cursive;
+}
+.on-left-box-2:hover .box-detail1{
+    height: 145px;
+    transition: all 0.7s;
+}
+.on-left-box-2:hover h4{
+    color: rgb(0, 68, 255);
+}
+.box-shadow1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   /* background-color: aqua;*/
+ background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.258), black 100%); 
+}
+.on-left-box-2:hover .box-shadow{
+    background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.858), black 100%); 
+
+}
+
+/*Sport*/
+.box-detail3{
+    width: 100%;
+    height: 80px;
+  /*  background-color: blue;*/
+    position: absolute;
+    bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7; /* number of lines to show */
+            line-clamp: 7; 
+    -webkit-box-orient: vertical;
+    color: white;
+    transition: all 0.7s;
+}
+.box-detail3, h4,p{
+    font-family: 'Koulen', cursive;
+}
+.down-left-box-2:hover .box-detail3{
+    height: 145px;
+    transition: all 0.7s;
+}
+.down-left-box-2:hover h4{
+    color: rgb(233, 28, 28);
+}
+.box-shadow3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   /* background-color: aqua;*/
+ background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.258), black 100%); 
+}
+.down-left-box-2:hover .box-shadow{
+    background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.858), black 100%); 
+
+}
+
+/*life*/
+.box-detail2{
+    width: 100%;
+    height: 80px;
+  /*  background-color: blue;*/
+    position: absolute;
+    bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    color: white;
+    transition: all 0.7s;
+}
+.box-detail2, h4,p{
+    font-family: 'Koulen', cursive;
+}
+.down-left-box-1:hover .box-detail2{
+    height: 145px;
+    transition: all 0.7s;
+}
+.down-left-box-1:hover h4{
+    color: rgb(239, 72, 186);
+}
+.box-shadow2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   /* background-color: aqua;*/
+ background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.174), rgba(0, 0, 0, 0.158), black 100%); 
+}
+.down-left-box-1:hover .box-shadow{
+    background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.858), black 100%); 
+
+}
